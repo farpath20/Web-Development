@@ -1,0 +1,14 @@
+    <div>
+        <h1>{{heroes.name}}</h1>
+        <img alt= {{heroes.name}} src={{heroes.thumbnail.path}}/portrait_xlarge.{{heroes.thumbnail.extension}} /> 
+        <p>{{heroes.description}}</p>
+        <h2>Comics</h2>
+        <ul>
+            {{#each heroes.comics.items}}  
+                <li>{{this.name}}</li>
+            {{/each}}
+        </ul>
+
+
+
+    </div>

@@ -1,0 +1,70 @@
+{{> header}}
+<div class="row cart">
+    <div class="col-lg-8">
+        <div class="table-responsive">
+            <table class="table table-borderless table-centered mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <!-- <th>Quantity</th> -->
+                        <th style="width: 50px;"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each cartitem}}
+                    <tr>
+                        <td>
+                            <img src="{{base_url}}/img/{{photos.[0]}}" alt="contact-img" title="contact-img"
+                                class="rounded me-3" height="64" />
+                            <p class="m-0 d-inline-block align-middle font-16">
+                                <a href="/singleitem/{{_id}}" class="text-body">{{itemName}}</a>
+                            </p>
+                        </td>
+                        <td>
+                            {{itemPrice}}$
+                        </td>
+                        <!-- <td>
+                                                                <input type="number" min="1" value="5" class="form-control" placeholder="Qty" style="width: 90px;">
+                                                            </td> -->
+                        <td>
+                            <a href="/item/removecartlist?id={{_id}}" class="action-icon"> <i class="fa fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    {{/each}}
+
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-12">
+            <div class="text-sm-end">
+                {{#if cartitem}}  
+               <a href="/item/checkout" class="btn btn-danger">
+                    Checkout</a>
+                    {{else}}
+                     <a href="/" class="btn btn-danger">
+                    Checkout</a>
+                     
+                    {{/if}}
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="border p-3 mt-4 mt-lg-0 rounded">
+            <h4 class="header-title mb-3">Order Summary</h4>
+
+            <div class="table-responsive">
+                <table class="table mb-0">
+                    <tbody>
+                        <tr>
+                            <td>Grand Total :</td>
+                            <td>{{grandTotal}}$</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> footer}}

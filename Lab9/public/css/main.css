@@ -1,0 +1,43 @@
+.container{
+    text-align: center;
+    background-color: burlywood;
+}
+h1{
+    color:blueviolet;
+}
+button{
+    height: 50px;
+    width: 50px;
+    color: aquamarine;
+    background-color: bisque;
+    border: 3px solid palegreen;
+    padding:50px;
+    margin: 10px;
+}
+textarea{
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    color:rgb(124, 238, 17);
+    border: 3px solid palegreen;
+}
+.is-palindrome{
+color: #0000FF;
+}
+.not-palindrome{
+color: #FF0000;
+}
+li{
+    text-align: left;
+}
+footer{
+    color:grey;
+    font-style: italic;
+}
+label{
+    color:pink;
+}
+body{
+background-color: coral;
+}
+

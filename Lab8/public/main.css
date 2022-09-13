@@ -1,0 +1,38 @@
+h1{
+    color:red;
+    background-color: black;
+}
+p{
+    color:skyblue;
+    text-align: left;
+    
+}
+.container{
+    text-align: center;
+    
+}
+img{
+    border-radius: 50%;
+}
+h2{
+    font-style: italic;
+}
+label{
+    color:purple;
+}
+#searchBar{
+    padding-left: 20px;
+    margin: left 10px;
+    margin: right 10px;
+}
+li{
+    color: brown;
+    font-size: 150%;
+    text-decoration: underline;
+    font-weight:bold;
+}
+.again{
+    font-size: 150%;
+    font-weight:bold;
+    background-color: chartreuse;
+}
